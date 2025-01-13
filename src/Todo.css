@@ -1,0 +1,160 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+/* Global Styles */
+body {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* General Container Styling */
+.todo-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Title Styling */
+.todo-title {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input and Button Styling */
+.todo-input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.todo-add-button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.todo-add-button:hover {
+    background-color: #4cae4c;
+}
+
+/* List Styling */
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.todo-task {
+    flex: 1;
+    text-align: left;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Buttons Styling */
+.todo-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-edit-button,
+.todo-delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: white;
+}
+
+.todo-edit-button1 {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d8ce49;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.todo-edit-button1:hover {
+    background-color: #ced115;
+}
+
+.todo-edit-button {
+    background-color: #5bc0de;
+}
+
+.todo-edit-button:hover {
+    background-color: #31b0d5;
+}
+
+.todo-delete-button {
+    background-color: #d9534f;
+}
+
+.todo-delete-button:hover {
+    background-color: #c9302c;
+}
+
+.Toastify__toast-container {
+    width: 400px;
+    font-family: 'Arial', sans-serif;
+}
+
+.Toastify__toast {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    padding: 10px;
+}
+
+.Toastify__toast--success {
+    background-color: #28a745;
+    color: white;
+}
+
+.Toastify__toast--error {
+    background-color: #dc3545;
+    color: white;
+}
+
+.Toastify__progress-bar {
+    display: none;
+    /* background-color: #ffc107; */
+}
+
+.Toastify__progress-bar--hidden {
+    display: none;
+}
+
