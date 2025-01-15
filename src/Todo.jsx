@@ -13,7 +13,7 @@ function Todo() {
     const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000" || "https://todo-backend-ochre.vercel.app";
     console.log(API_URL)
     const getTasks = () => {
-        axios.get(`${API_URL}/todos`)
+        axios.get(`${API_URL}todos`)
         .then(res => {
             setTasks(res.data)
         })
@@ -31,7 +31,7 @@ function Todo() {
             "isCompleted": false,
             "user": "new user"
         }
-        axios.post(`${API_URL}/todos`, {task: taskInput})
+        axios.post(`${API_URL}todos`, {task: taskInput})
         .then(res => {
             // alert("Added successfully")
             toast.success("Task added successfully!")
@@ -52,7 +52,7 @@ function Todo() {
 
     const deleteTask = (id) => {
         console.log("Deleting task with ID:", id);
-        axios.delete(`${API_URL}/todos/${id}`, id)
+        axios.delete(`${API_URL}todos/${id}`, id)
         .then(res => {
             // alert("Task deleted successfully");
             toast.success("Task deleted successfully!");
@@ -77,7 +77,7 @@ function Todo() {
     const updateTask = () => {
         
         console.log("editValue:", editValue);
-        axios.put(`${API_URL}/todos/`+editId, {task: editValue})
+        axios.put(`${API_URL}todos/`+editId, {task: editValue})
         .then(res => {
             // alert("Task updated successfully")
             toast.success("Task updated successfully!")
