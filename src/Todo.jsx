@@ -11,7 +11,7 @@ function Todo() {
     const [editId, setEditId] = useState ("")
     const [editValue, setEditValue] = useState ("")
     const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000" || "https://todo-backend-ochre.vercel.app";
-    console.log(API_URL)
+    
     const getTasks = () => {
         axios.get(`${API_URL}todos`)
         .then(res => {
